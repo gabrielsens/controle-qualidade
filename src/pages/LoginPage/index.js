@@ -1,4 +1,6 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+
+import { Context } from '../../Context/AuthContext';
 
 import {
   Container, Form, FormContainer, ImageLogo,
@@ -10,6 +12,7 @@ import Button from '../../components/Button';
 import imgLogo from '../../assets/images/img_login.png';
 
 export default function LoginPage() {
+  const { handleLogin } = useContext(Context);
   const [user, setUser] = useState('');
   const [password, setPassowrd] = useState('');
 
@@ -23,7 +26,7 @@ export default function LoginPage() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(user, password);
+    handleLogin(user, password);
   }
   return (
     <Container>

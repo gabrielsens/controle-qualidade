@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledButton = styled.button`
   background: ${({ theme }) => theme.colors.bitlab.main};
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   width: 100%;
   color: #fff;
   height: 52px;

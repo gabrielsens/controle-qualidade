@@ -33,6 +33,7 @@ export const ImageLogo = styled.div`
   width: 100%;
   height: 200px;
   img {
+    margin: 45px;
     width: 100%;
 
   }
